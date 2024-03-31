@@ -7,12 +7,16 @@ c = conn.cursor()
 ## create table
 c.execute(
     """
-    insert into SCHEDULE_LIST values(1,'john','2024/03/31','2024/04/20','not easy','and',3);
+    select * from SCHEDULE_LIST;
 """
 )
+
+rows = c.fetchall()
+
+for row in rows :
+    print(row)
 
 conn.commit()
 
 c.close()
 conn.close()    
-
