@@ -1,0 +1,10 @@
+
+# docker file mv
+docker cp /Users/fomiman/workspace/tbdocker/tibero6-bin-FS07_PS02-linux64_3.10-278233-20240902155416.tar.gz tibero_dbms:/sw/tibero/stage
+
+docker cp /Users/fomiman/workspace/tbdocker/license.xml tibero_dbms:/sw/tibero/stage
+
+
+docker exec -it tibero_dbms env TERM=xterm-256color bash
+
+## 241207 git upload
